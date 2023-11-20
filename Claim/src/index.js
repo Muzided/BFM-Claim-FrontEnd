@@ -6,12 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import "@rainbow-me/rainbowkit/styles.css";
 
 import { WagmiConfig, configureChains, createConfig } from 'wagmi';
-import { bsc } from 'wagmi/chains';
+import { bsc, bscTestnet } from 'wagmi/chains';
 import { RainbowKitProvider, getDefaultWallets } from '@rainbow-me/rainbowkit';
 import { publicProvider } from 'wagmi/providers/public';
 import { darkTheme, Theme } from "@rainbow-me/rainbowkit";
 
-const { publicClient, chains } = configureChains([bsc], [publicProvider()]);
+const { publicClient, chains } = configureChains([bscTestnet], [publicProvider()]);
 
 const { connectors } = getDefaultWallets({
   appName: 'rexx_presale_app',

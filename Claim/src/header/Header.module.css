@@ -1,0 +1,130 @@
+.header__logo {
+    object-fit: contain;
+    width: 250px;
+    height: 100px;
+    cursor: pointer;
+    margin-left: 174px;
+}
+
+.header__socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+    margin-right: 170px;
+    /* border: 1px solid red; */
+}
+
+.header__link {
+    color: #c8c8c8;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.header__link:visited {
+    color: #c8c8c8;
+}
+
+.header__icon {
+    width: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__icon:hover,
+.header__icon:focus {
+    opacity: 0.8;
+}
+
+.header__mobile {
+    display: none;
+}
+
+.header__mobile__menu {
+    /* display: none; */
+    width: 40px;
+    height: 40px;
+    border: 1px solid reds;
+}
+
+.connect__wallet__button {
+    background-color: #333333;
+    color: white;
+    border-radius: 40px;
+    font-weight: bold;
+    width: 200px;
+    height: 54px;
+}
+
+@media (max-width: 1024px) {
+    .header__logo {
+        object-fit: contain;
+        width: 250px;
+        height: 100px;
+        cursor: pointer;
+        margin-left: 12px;
+        /* border: 1px solid red; */
+    }
+
+    .header__socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 700px;
+        margin-right: 12px;
+        /* border: 1px solid red; */
+    }
+}
+
+@media (max-width: 768px) {
+    .header__logo {
+        object-fit: contain;
+        width: 250px;
+        height: 100px;
+        cursor: pointer;
+        margin-left: 12px;
+        /* border: 1px solid red; */
+    }
+
+    .header__socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        margin-right: 12px;
+        /* border: 1px solid red; */
+    }
+
+    .header__link {
+        display: none;
+    }
+
+    .header__icon {
+        display: none;
+    }
+
+    .connect__wallet__button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .header__logo__container {
+
+    }
+
+    .header__logo {
+        width: 120px;
+    }
+
+    .header__socials {
+        align-items: center;
+        justify-content: center;
+        padding-left: 2%;
+        
+    }
+}
