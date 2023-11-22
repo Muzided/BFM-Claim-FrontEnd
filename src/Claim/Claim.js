@@ -92,20 +92,20 @@ const Claim = () => {
       <div className='bg-gradient-to-bl from-[#EC9A3F] to-[#060401] py-4 px-1 md:p-4 rounded-2xl shadow-2xl'>
        { isConnected? <div className='flex flex-col space-y-3 items-center text-white'>
           <div className='text-sm font-medium text-black'>{address}</div>
-          <div className='text-xl md:text-3xl font-bold text-black text-center md:text-start'>BFM Token Presale <span className='text-white'>Token Claim</span></div>
+          <div className='text-xl md:text-3xl font-bold text-black text-center md:text-start'>BFM Token Presale <span className='text-white'>Stage 4 Token Claim</span></div>
           <div className='flex flex-col space-y-4 bg-black  p-4 rounded-lg font-semibold'>
             <div className='text-xl'>Total Claimable : {claimableTokens}</div>
             <div className='flex gap-4 text-xl '><div>Token Lock :</div><DownCounter init={init} stageEnd={lockTime} /> </div>
 
             <div className='text-xl'>Release on : {moment(
-              stageEnd
+              lockTime
             ).format('lll')}</div>
           </div>
           <button className='bg-[#895212] shadow-2xl rounded-md px-6 py-2 w-fit text-white font-bold text-xl' onClick={() => { claimTokens() }}>Claim</button>
 
 
         </div>:<div className='flex flex-col space-y-4 items-center py-4'>
-        <div className='text-3xl font-bold text-black text-center md:text-start'>Connect Wallet to <span className='text-white'>Token Claim</span></div>
+        <div className='text-3xl font-bold text-black text-center md:text-start'>Connect Wallet to <span className='text-white'>Claim Stage 4 Tokens</span></div>
         <ConnectButton/>
           </div>}
       </div>
